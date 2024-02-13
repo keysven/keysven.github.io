@@ -1,0 +1,31 @@
+git clone --mirror https://github.com/noxonsu/nft.git nft
+cd new-repo
+
+git remote set-url origin https://github.com/magichand-star/Hotel-Room-Booking.git
+
+Command To Change User.
+
+git filter-branch --env-filter "export GIT_COMMITTER_NAME='magichand-star' export GIT_COMMITTER_EMAIL='robust99213@gmail.com' export GIT_AUTHOR_NAME='magichand-star' export GIT_AUTHOR_EMAIL='robust99213@gmail.com'" --tag-name-filter cat -- --branches --tags
+git push --all
+git push --tags
+
+
+
+
+git filter-branch --env-filter "export GIT_COMMITTER_NAME='star95417' export GIT_COMMITTER_EMAIL='aronli1999911@gmail.com' export GIT_AUTHOR_NAME='star95417' export GIT_AUTHOR_EMAIL='aronli1999911@gmail.com'" --tag-name-filter cat -- --branches --tags
+
+
+aronli1999911@gmail.com
+
+
+
+//////////////////////////////////////////////////////////
+
+https://www.git-tower.com/learn/git/faq/change-author-name-email
+
+$ git filter-branch --env-filter "
+WRONG_EMAIL='wrong@example.com'
+NEW_NAME='New Name Value'
+NEW_EMAIL='correct@example.com'
+
+if [ '$GIT_COMMITTER_EMAIL' = '$WRONG_EMAIL' ] then export GIT_COMMITTER_NAME='junki105' export GIT_COMMITTER_EMAIL='junki.dev@gmail.com' fi if [ '$GIT_AUTHOR_EMAIL' = '$WRONG_EMAIL' ] then export GIT_AUTHOR_NAME='junki105' export GIT_AUTHOR_EMAIL='junki.dev@gmail.com' fi " --tag-name-filter cat -- --branches --tags
